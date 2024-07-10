@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-Container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+h2{
+  width: 300px;
+  height: 28px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  
+
+}
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 386px;
+  height: auto; 
+  padding: 90px 10px;  
+  background-color: #F0F0F0;
+  border: 1px solid #0a0a0a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 84px;
+  margin-bottom: 30px;
+}
+
+.input-group label {
+  text-align: left;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.input-field {
+  width: 300px;
+  /* height: 48px; */
+  padding: 10px;
+  font-size: 14px;
+  line-height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-field::placeholder {
+  color: #ccc;
+}
+
+.error-message,p { 
+  
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.error-message svg {
+  margin-right: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: bottom;
+  width: 100%;
+  margin-top: 20px; /* Add some space between the form and the buttons */
+}
+
+.login-button, .update-button, .logout-button {
+  height: 48px;
+  background-color: #5E5BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button {
+  width: 67px;
+  margin-left: -230px;
+}
+
+.update-button {
+  width: 128px;
+  margin-left: 45px;
+}
+
+.logout-button {
+  width: 77px;
+  background-color: #FF0000; 
+  margin-right: 20px;
+}
+
+.login-button:hover, .update-button:hover, .logout-button:hover {
+  background-color: #0056b3;
+}
+
+.logout-button:hover {
+  background-color: #d20000; /* Darker red for hover state */
+}
